@@ -92,6 +92,8 @@ const Post: React.FC<PostProps> = (props) => {
 				<meta property="article:published_time" content={post.dateGmt} />
 				<meta property="article:modified_time" content={post.modifiedGmt} />
 				<meta property="og:image" content={post.featuredImage.node.sourceUrl} />
+				<meta property="og:image:width" content="1080" />
+				<meta property="og:image:height" content="1080" />
 				<meta property="og:image:alt" content={post.featuredImage.node.altText || post.title} />
 				<title>{post.title}</title>
 			</Head>
